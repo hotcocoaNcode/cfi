@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
             jFatal("Operator stack overflow!");
         }
         switch ((unsigned char) bytecode[i]) {
-            case (0): {
+            case (0): { //Exit
                 i++;
                 char code = (signed char) (unsigned char) bytecode[i];
                 exit(code);
@@ -299,7 +299,7 @@ int main(int argc, char *argv[])
                 short a = opstack[opstack_head];
                 opstack_head--;
                 short b = opstack[opstack_head];
-                opstack[opstack_head] = (short) ((b==1 || a==1 ? 1 : 0));
+                opstack[opstack_head] = (short) ((b==1 && a==1 ? 1 : 0));
                 break;
             }
 
