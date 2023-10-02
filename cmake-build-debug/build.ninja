@@ -51,13 +51,19 @@ build cmake_object_order_depends_target_cfi: phony || CMakeFiles/cfi.dir
 
 build CMakeFiles/cfi.dir/main.c.o: C_COMPILER__cfi_unscanned_Debug /Users/elee/CLionProjects/CFluff/main.c || cmake_object_order_depends_target_cfi
   DEP_FILE = CMakeFiles/cfi.dir/main.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O2
   OBJECT_DIR = CMakeFiles/cfi.dir
   OBJECT_FILE_DIR = CMakeFiles/cfi.dir
 
 build CMakeFiles/cfi.dir/jlog.c.o: C_COMPILER__cfi_unscanned_Debug /Users/elee/CLionProjects/CFluff/jlog.c || cmake_object_order_depends_target_cfi
   DEP_FILE = CMakeFiles/cfi.dir/jlog.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O2
+  OBJECT_DIR = CMakeFiles/cfi.dir
+  OBJECT_FILE_DIR = CMakeFiles/cfi.dir
+
+build CMakeFiles/cfi.dir/interpretModes.c.o: C_COMPILER__cfi_unscanned_Debug /Users/elee/CLionProjects/CFluff/interpretModes.c || cmake_object_order_depends_target_cfi
+  DEP_FILE = CMakeFiles/cfi.dir/interpretModes.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -O2
   OBJECT_DIR = CMakeFiles/cfi.dir
   OBJECT_FILE_DIR = CMakeFiles/cfi.dir
 
@@ -69,7 +75,7 @@ build CMakeFiles/cfi.dir/jlog.c.o: C_COMPILER__cfi_unscanned_Debug /Users/elee/C
 #############################################
 # Link the executable cfi
 
-build cfi: C_EXECUTABLE_LINKER__cfi_Debug CMakeFiles/cfi.dir/main.c.o CMakeFiles/cfi.dir/jlog.c.o
+build cfi: C_EXECUTABLE_LINKER__cfi_Debug CMakeFiles/cfi.dir/main.c.o CMakeFiles/cfi.dir/jlog.c.o CMakeFiles/cfi.dir/interpretModes.c.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/cfi.dir
   POST_BUILD = :
